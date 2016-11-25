@@ -270,6 +270,7 @@ abstract public class AbstractScriptGenerator implements ScriptGenerator {
       // dump the line and re-init the line-buffer
       flushLine(false);
       iLineBuffer.append(pBuf);
+      iLineBuffer.append(" ");
     } else {
       // the given buffer still fits, so append to the line
       iLineBuffer.append(pBuf);
